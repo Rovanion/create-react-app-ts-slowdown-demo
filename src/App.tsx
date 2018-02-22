@@ -1,7 +1,9 @@
 import * as React from 'react';
+import { List } from 'immutable';
 import './App.css';
 
 const logo = require('./logo.svg');
+const list: List<number> = List([1, 2, 3, 4]);
 
 class App extends React.Component {
   render() {
@@ -10,6 +12,7 @@ class App extends React.Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
+          <p>{list}</p>
         </header>
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
